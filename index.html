@@ -27,9 +27,10 @@
                     </div>
                     
                     <div>
-                        <input type="text" placeholder="Inserisci Nuova Task">
+                        
+                        <input type="text" placeholder="Inserisci Nuova Task" v-model="newTask">
     
-                        <button>
+                        <button @click="addTask()">
                             AGGIUNGI
                         </button>                        
                     </div>

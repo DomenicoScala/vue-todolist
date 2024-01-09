@@ -17,15 +17,31 @@ createApp({
                 {
                     text: 'Inviare mail con i progetti allegati',
                     done: true
+                },
+            ],
+            
+           newTask :''
+          
+                
+            };
+        },
+        methods:{
+            removeTask(i){
+                this.tasks.splice(i,1);
+                console.log(this.removeTask);
+            },
+            addTask(){
+                if(this.newTask.trim() !== ''){
+                    this.tasks.push({text: this.newTask, done: false});
+                    this.newTask = '';
                 }
-            ]
-        }
-    },
-    methods:{
-        removeTask(i){
-            this.tasks.splice(i,1)
-            console.log(this.removeTask)
+                
+
+                  
+            console.log(this.tasks)    
+            console.log(this.addTask)
         }
     }
   
 }).mount('#app');
+
