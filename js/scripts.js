@@ -22,7 +22,10 @@ createApp({
         }
     },
     methods:{
-        
+        removeTask(i){
+            this.tasks.splice(i,1)
+            console.log(this.removeTask)
+        }
     }
   
 }).mount('#app');

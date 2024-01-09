@@ -73,7 +73,16 @@ ul{
     list-style: none;
 }
 
-.fa-solid.fa-xmark{
-    
+li{
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
 
+span:hover{
+    background-color: rgba(153, 153, 153, 0.343);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
