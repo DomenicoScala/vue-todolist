@@ -40,7 +40,9 @@ createApp({
                   
             console.log(this.tasks)    
             console.log(this.addTask)
-        }
+        },
+        
+
     }
   
 }).mount('#app');
