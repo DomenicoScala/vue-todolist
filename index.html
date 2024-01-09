@@ -23,10 +23,29 @@
 
                 <header>
                     <div>
-                        <img src="" alt="">
+                        <img src="./img/logo boolean.png" alt="logo">
+                    </div>
+                    
+                    <div>
+                        <input type="text" placeholder="Inserisci Nuova Task">
+    
+                        <button>
+                            AGGIUNGI
+                        </button>                        
                     </div>
                 </header>
+                
 
+                <main>
+                    <div class="cont-to-do">
+                        <ul>
+                            <li v-for="(elem, i) in tasks" :class="elem.done == true ? 'true' : 'false'">
+                                {{ elem.text }}
+                                <!-- <span><i class="fa-solid fa-xmark"></i></span> -->
+                            </li>
+                        </ul>
+                    </div>
+                </main>
             </div>
         </div>
 

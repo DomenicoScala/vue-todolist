@@ -7,11 +7,73 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(78, 78, 252);
+}
+
+
 html {
     font-family: 'Poppins', sans-serif;
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+header > div > img{
+    max-width: 40%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top:20px;
+}
+
+header > div:nth-child(2){
+    text-align: center;
+    margin-top: 20px;
+}
+
+header > div > input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 97, 97);
+    width: 300px;
+    margin-right: 20px;
+}
+
+header > div > button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 97, 97);
+    background-color: white;
+}
+
+.true{
+    text-decoration: line-through;
+    color: green;
+}
+
+.false{
+    text-decoration: line-through;
+    color: red;
+}
+
+
+.cont-to-do{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+.fa-solid.fa-xmark{
+    
+
 }

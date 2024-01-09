@@ -5,8 +5,24 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Template HTML CSS Vue',
-        };
+            tasks: [
+                {
+                    text: 'Completa Esercizio ToDoList',
+                    done: false
+                },
+                {
+                    text: 'Crea lista dei Linguaggi di Programmazione da studiare.',
+                    done: true
+                },
+                {
+                    text: 'Inviare mail con i progetti allegati',
+                    done: true
+                }
+            ]
+        }
+    },
+    methods:{
+        
     }
-  // Monto l'istanza di Vue in pagina
+  
 }).mount('#app');
