@@ -20,9 +20,8 @@ createApp({
                 },
             ],
             
-           newTask :''
-          
-                
+           newTask :'', 
+           newDone : true             
             };
         },
         methods:{
@@ -35,14 +34,7 @@ createApp({
                     this.tasks.push({text: this.newTask, done: false});
                     this.newTask = '';
                 }
-                
-
-                  
-            console.log(this.tasks)    
-            console.log(this.addTask)
-        },
-        
-
+            },
     }
   
 }).mount('#app');

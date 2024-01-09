@@ -82,6 +82,12 @@ li{
     justify-content: space-between;
 }
 
+li:hover{
+    background-color: rgba(153, 153, 153, 0.343);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 span:hover{
     background-color: rgba(153, 153, 153, 0.343);
     padding: 5px;

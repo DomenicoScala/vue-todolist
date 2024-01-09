@@ -39,14 +39,17 @@
 
                 <main>
                     <div class="cont-to-do">
-                        <ul>
+                        <ul v-if="tasks.length > 0">
+                            
                             <li v-for="(elem, i) in tasks" :class="elem.done == true ? 'true' : 'false'">
                                 {{ elem.text }}
                                 <div>
                                     <span @click="removeTask(i)"><i class="fa-solid fa-xmark"></i></span>
                                 </div>
                             </li>
+                            
                         </ul>
+                        <p v-else>Non ci sono Task</p>
                     </div>
                 </main>
             </div>
