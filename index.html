@@ -41,7 +41,7 @@
                     <div class="cont-to-do">
                         <ul v-if="tasks.length > 0">
                             
-                            <li v-for="(elem, i) in tasks" :class="elem.done == true ? 'true' : 'false'">
+                            <li v-for="(elem, i) in tasks" :class="elem.done == true ? 'true' : 'false'" @click="invertDone(i)">
                                 {{ elem.text }}
                                 <div>
                                     <span @click="removeTask(i)"><i class="fa-solid fa-xmark"></i></span>

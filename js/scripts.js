@@ -21,7 +21,7 @@ createApp({
             ],
             
            newTask :'', 
-           newDone : true             
+                       
             };
         },
         methods:{
@@ -35,6 +35,11 @@ createApp({
                     this.newTask = '';
                 }
             },
+            invertDone(i){
+                this.tasks[i].done = !this.tasks[i].done
+                console.log(this.invertDone)
+            }
+
     }
   
 }).mount('#app');
